@@ -20,7 +20,7 @@ import hashlib
 #######################################################
 
 NIGHTSCOUT_URL = "https://your.nightscout.url"
-API_SECRET = "your api secrect"
+API_SECRET = "your api secret"
 MMOL = True # set to False if you prefer mgdl instead
 
 #######################################################
@@ -43,7 +43,8 @@ def arrow(direction):
         "DoubleDown": "↓↓",
         "SingleDown": "↓",
         "FortyFiveDown": "↘",
-        "FortyFiveUp": "↗"
+        "FortyFiveUp": "↗",
+        None: "-"
     }
     return arrows.get(direction, direction)
 
