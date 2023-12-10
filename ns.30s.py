@@ -11,12 +11,6 @@
 #  <xbar.dependencies>python</xbar.dependencies>
 #  <xbar.abouturl>http://url-to-about.com/</xbar.abouturl>
 
-# Variables become preferences in the app:
-#
-#  <xbar.var>string(NIGHTSCOUT_URL="https://your.nightscout.server"): URL to your server, including the https://.</xbar.var>
-#  <xbar.var>boolean(MMOL=True): If you like the data to be in mmol, if you want mgdl, set to False.</xbar.var>
-#  <xbar.var>string(API_SECRET=""): The API secret for your Nightscout server</xbar.var>
-
 import urllib.request
 import requests
 import hashlib
@@ -25,8 +19,8 @@ import hashlib
 # Change this to fit your Nightscout setup
 #######################################################
 
-NIGHTSCOUT_URL = ""
-API_SECRET = ""
+NIGHTSCOUT_URL = "https://your.nightscout.url"
+API_SECRET = "your api secrect"
 MMOL = True # set to False if you prefer mgdl instead
 
 #######################################################
