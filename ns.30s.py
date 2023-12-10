@@ -79,7 +79,7 @@ else:
           glucose_value = data[0].get('sgv')
           direction = data[0].get('direction')
           if (MMOL):
-            glucose_value = glucose_value * 0.0555
+            glucose_value = glucose_value / 18
             print(f"{glucose_value:.1f} {arrow(direction)}")
           else:
             print(f"{glucose_value} {arrow(direction)}")
@@ -87,3 +87,6 @@ else:
           print("[no data]")
   else:
       print("[error:"+ str(response.status_code)+"]")
+
+print("---")
+print(f"Open nightscout | href={NIGHTSCOUT_URL}")
